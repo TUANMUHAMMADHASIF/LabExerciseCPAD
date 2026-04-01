@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Contact Me">
+	<title>Contact Me - My Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Tuan Muhammad Hasif bin Tuan Zaki</h1>
+		<p>Student in Software Engineering at Universiti Teknologi Malaysia</p>
+	</header>
+	
+	<nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills & Glossary</a></li>
+            <li><a href="academic.html">Academic Record</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <section id="contact">
+        <h9>Contact Me</h9>
+        <form action="#" method="post"></form>
+        <fieldset style="border: 2px solid #34495e; padding:20px;">
+            <legend><strong>Send a Message to Us</strong></legend>
+
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" 
+                placeholder="Your full name"
+                required maxlength="60">
+            </p>   
+
+            <p>
+                <label for="user-email">Email Address:</label><br>
+                <input type="email" id="user-email" name="user-email" 
+                placeholder="hasif1235@gmail.com" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" 
+                placeholder="011-2234567">
+            </p>
+
+            <p>
+                <label for="age">Your Age:</label><br>
+                <input type="number" id="age" name="age" 
+                min="10" max="80"
+                placeholder="21">
+            </p>
+
+            <p>
+                <label for="meeting-date">Preferred Meeting Date:</label><br>
+                <input type="date" id="meeting-date" name="meeting-date">
+            </p>
+
+            <p>
+                <label for="urgency" style="background-color: #ecf0f1; padding: 5px;">Urgency Level (1-10):</label><br>
+                <input type="range" id="urgency" name="urgency" 
+                min="1" max="10">
+            </p>
+
+            <p>
+                <label for="purpose">Purpose of Contact:</label><br>
+                    <select id="purpose" name="purpose">
+                        <option value="collaboration">Research Collaboration</option>
+                        <option value="mentorship">Mentorship</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="freelance">Freelance Project</option>
+                    </select>
+            </p>
+
+            <p>How would you like to be contacted?<br>
+                <input type="radio" id="contact_email" name="contact_pref" value="email">
+                <label for="contact_email">Email</label>
+                <input type="radio" id="contact_phone" name="contact_pref" value="phone">
+                <label for="contact_phone">Phone</label>
+                <input type="radio" id="contact_sms" name="contact_pref" value="sms">
+                <label for="contact_sms">SMS</label>
+            </p>
+
+            <p>Interested in:<br>
+                <input type="checkbox" id="int_web" name="interests" value="web">
+                <label for="int_web">Web Design</label>
+                <input type="checkbox" id="int_ux" name="interests" value="ux">
+                <label for="int_ux">UX Research</label>
+                <input type="checkbox" id="int_ai" name="interests" value="ai">
+                <label for="int_ai">AI Systems</label>
+            </p>
+
+            <p>
+                <label for="message">Detailed Message:</label><br>
+                <textarea id="message" name="message" 
+                rows="5" cols="40"
+                placeholder="Extra details about your inquiry..."></textarea>
+            </p>
+            <button type="submit" 
+            style="padding: 10px 20px; cursor: pointer;">Submit Form</button>
+        </fieldset>
+            
+    </section>
+</main>
+
+	<footer>
+		<address>
+			Email: <a href="mailto:t.hhasiff@gmail.com">t.hhasiff@gmail.com</a><br>
+			UTM Skudai, Johor, Malaysia
+		</address> 
+	</footer>
+</body>
+</html>
