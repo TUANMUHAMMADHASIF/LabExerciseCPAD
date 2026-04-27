@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>WeatherNow🌞</h1>
+        
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="searchBtn">Search</button>
+            <p id="validationMsg" class="error-text" style="display:none;">Please enter at least 2 characters.</p>
+        </div>
+
+        <div id="recentSearches" class="chips-container"></div>
+
+        <div id="errorBanner" class="error-banner" style="display:none;">
+            <span id="errorMsg"></span>
+            <button onclick="location.reload()">Retry</button>
+        </div>
+
+        <div id="currentWeather" class="card main-card skeleton">
+            <h2 id="cityName" class="loading-text">City Name</h2>
+            <div class="weather-info">
+                <span id="temp" class="large-temp">--</span>°C
+                <div id="description">--</div>
+                <div id="localTime">Time: --</div>
+            </div>
+            <div class="details">
+                <p>💧 Humidity: <span id="humidity">--</span>%</p>
+                <p>💨 Wind: <span id="wind">--</span> km/h</p>
+            </div>
+        </div>
+
+        <div id="forecastRow" class="forecast-row">
+            </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
